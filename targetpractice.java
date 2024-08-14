@@ -2,7 +2,10 @@ package com.cp;
 
 import java.util.Scanner;
 public class targetpractice{
-    public static void main(String [] args ){
+    public static void main(String [] args ) {
+        solve();
+    }
+    static void solve(){
         Scanner sc=new Scanner(System.in);
         int [][]s = {
                 {1,1,1,1,1,1,1,1,1,1},
@@ -21,8 +24,9 @@ public class targetpractice{
         while(t-->0){
             int a = 0;
             for (int i = 0; i < 10; i++) {
+                String s1=sc.next();//hr line ko as a string input karwa lo uske baad usme se ek ek character nikal lo tab compare kro
                 for (int j = 0; j < 10; j++) {
-                    c=sc.next().charAt(0);
+                    c=s1.charAt(j);
                     if (c == 'X') {a += s[i][j];}
                 }
             }

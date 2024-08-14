@@ -18,16 +18,16 @@ public class diff {
                 }
             }
             boolean tell = false;
-            int ne = a;
-            if (ne == n)
+            int neq = a;
+            if (neq == n)
                 tell = true;
             for (int i = 0; i < q; i++) {
                 if (s.charAt(i) == '+') {
-                    ne = ne + 1;
+                    neq = neq + 1;
                 } else {
-                    ne = ne - 1;
+                    neq = neq - 1;
                 }
-                if (ne == n) {
+                if (neq == n) {
                     tell = true;
                 }
             }
