@@ -8,9 +8,11 @@ public class Solution {
     }
     static void solve() {
         Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number of test cases:");
         int t = sc.nextInt();
         sc.nextLine();
         while (t-- > 0) {
+            System.out.println("enter the string:");
             String str = sc.nextLine();
             String[] s = str.split(" ");
             int[] a = new int[4];
