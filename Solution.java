@@ -29,7 +29,7 @@ public class Solution {
             if ((check(a2, b2) + check(a1, b1)) > 0)
                 answer = answer + 1;
             System.out.println(answer);
-            }
+        }
         }
     static int check(int a1,int a2){
         return Integer.compare(a1, a2);
